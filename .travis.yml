@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t farhan/docker-react -f . .
+  - docker build -t farhan/docker-react  .
 
 script:
   - docker run -e CI=true farhan/docker-react npm run test
